@@ -59,9 +59,9 @@
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="#!">Home</a></li>
-                    <li><a class="dropdown-button" data-activates="blogsDropdown" href="#!">Blogs</a><i class="material-icons right">arrow_drop_down</i></li>
-                    <li><a class="dropdown-button" data-activates="myVentureDropdown" href="#!">My Ventures</a><i class="material-icons right">arrow_drop_down</i></li>
-                    <li><a class="dropdown-button" data-activates="aboutMeDropdown" href="#!">About Me</a><i class="material-icons right">arrow_drop_down</i></li>
+                    <li><a class="dropdown-button" href="#!">Blogs</a</li>
+                    <li><a class="dropdown-button" href="#!">My Ventures</a></li>
+                    <li><a class="dropdown-button" href="#!">About Me</a></li>
                 </ul>
         </nav>
 
@@ -118,6 +118,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function()    {
+                $(".dropdown-button").dropdown();
                 $(".button-collapse").sideNav();
             })
         </script>
