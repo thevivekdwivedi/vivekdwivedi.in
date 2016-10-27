@@ -1,0 +1,68 @@
+<html ng-app="">
+    <head>
+        <title>Vivek Dwivedi</title>
+
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- Import Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  
+    </head>
+
+    <body>
+        <!-- Dropdown Structure for My Ventures -->
+        <ul id="myVentureDropdown" class="dropdown-content">
+            <li><a href="#!">Scholar@SAP</a></li>
+            <li><a href="#!">STUDSAT-2</a></li>
+            <li><a href="#!">MillSurface ERP</a></li>
+        </ul>
+
+        <!-- Dropdown Structure for About Me -->
+        <ul id="aboutMeDropdown" class="dropdown-content">
+            <li><a href="#!">Appearance</a></li>
+            <li><a href="#!">Political Views</a></li>
+            <li><a href="#!">Religious Views</a></li>
+            <li><a href="#!">Hobbies</a></li>
+            <li><a href="#!">Interests</a></li>
+        </ul>
+
+        <!-- Dropdown Structure for Blogs -->
+        <ul id="blogsDropdown" class="dropdown-content">
+            <li><a href="#!">Political</a></li>
+            <li><a href="#!">Religious</a></li>
+            <li><a href="#!">Historical</a></li>
+            <li><a href="#!">Life</a></li>
+            <li><a href="#!">Future</a></li>
+            <li><a href="#!">Science</a></li>
+            <li><a href="#!">Technology</a></li>
+        </ul>
+
+        <!-- Navbar -->
+        <nav class="indigo">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo right">Vivek Dwivedi</a>
+                <ul class="left">
+                    <li><a href="#!">Home</a></li>
+                    <li><a class="dropdown-button" data-activates="blogsDropdown" href="#!">Blogs<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" data-activates="myVentureDropdown" href="#!">My Ventures<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" data-activates="aboutMeDropdown" href="#!">About Me<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+        </nav>
+
+
+        <!-- scripts -->
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+   
+    
+    </body>
+</html>
