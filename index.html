@@ -34,6 +34,13 @@
             <li><a href="#!">Hobbies</a></li>
             <li><a href="#!">Interests</a></li>
         </ul>
+        <ul id="aboutMeDropdown1" class="dropdown-content indigo-text">
+            <li><a href="#!">Appearance</a></li>
+            <li><a href="#!">Political Views</a></li>
+            <li><a href="#!">Religious Views</a></li>
+            <li><a href="#!">Hobbies</a></li>
+            <li><a href="#!">Interests</a></li>
+        </ul>
 
         <!-- Dropdown Structure for Blogs -->
         <ul id="blogsDropdown" class="dropdown-content">
@@ -53,13 +60,13 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="left hide-on-med-and-down">
                     <li><a href="#!">Home</a></li>
-                    <li><a class="dropdown-button" data-activates="blogsDropdown" href="#!">Blogs<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-button" data-activates="myVentureDropdown" href="#!">My Ventures<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-button" data-activates="aboutMeDropdown" href="#!">About Me<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" data-activates="blogsDropdown" href="#!">Blogs<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" data-activates="myVentureDropdown" href="#!">My Ventures<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" data-beloworigin="true" data-hover="true" data-activates="aboutMeDropdown" href="#!">About Me<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="#!">Home</a></li>
-                    <li><a class="dropdown-button" href="#!">Blogs</a</li>
+                    <li><a class="dropdown-button" data-activates="blogsDropdown1" data-beloworigin="true" href="#!">Blogs</a</li>
                     <li><a class="dropdown-button" href="#!">My Ventures</a></li>
                     <li><a class="dropdown-button" href="#!">About Me</a></li>
                 </ul>
@@ -102,16 +109,15 @@
                             </div>
                         </nav>
                         <div class="card-content">
-                            <p>Lorem Ipsum
-                                <br>
-                                <span class="red-text">Under construction</span>
-                            </p>
+                            <a class="twitter-timeline" href="https://twitter.com/thevivekdwivedi">
+                                Tweets by @thevivekdwivedi
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <div class="card">
-                        <nav class="blue darken-3 white-text">
+                        <nav class="blue darken-2 white-text">
                             <div class="card-content">
                                 <span class="card-title">LinkedIn Feed<span class="right"><a href="https://in.linkedin.com/in/vivek-dwivedi-19836baa"><img src="./img/linkedin_icon.png" class="material-icons"></a></span></span>
                             </div>
@@ -126,7 +132,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- scripts -->
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -134,7 +140,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function()    {
-                $(".dropdown-button").dropdown();
+                //$(".dropdown-button").dropdown();
                 $(".button-collapse").sideNav();
             })
         </script>
